@@ -1,4 +1,11 @@
 {
   "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true
+  "python.linting.pylintEnabled": true,
+  "files.exclude": {
+    "**/*.pyc": {
+      "when": "${basename}.py"
+    },
+    "**/.pytest_cache": true,
+    "**/__pycache__": true,
+  }
 }
